@@ -1,9 +1,235 @@
-.market {
-    flex: 1;
+.Market {
+    flex: 1 1 auto;
     display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.Market-Container {
+    width: 90%;
+    font-size: 1rem;
+    padding-top: 4.5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.Market-Container p {
+    margin: 0;
+    padding: 0;
+}
+
+.Market-Notification {
+    background-color: #ebfff4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    /* distributes child divs evenly along the horizontal axis */
+    width: 100%;
+    /* to make this div fill the full width of its parent */
+    padding: 5px 0px 5px 0px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.Notification-Image,
+.Notification-Text {
+    display: flex;
+    flex-direction: column;
+    /* to divide the horizontal space equally between these two divs */
+    padding: 0;
+    margin: 0;
+}
+
+.Notification-Image {
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    box-sizing: border-box;
-    height: 100%;
+    width: 8%;
+}
+
+.Notification-Text {
+    align-items: flex-start;
+    justify-content: center;
+    width: 80%;
+    font-family: 'Hind', sans-serif;
+    font-size: 0.5rem;
+}
+
+.Market-Notification-Logo {
+    width: 50%;
+    min-width: 30px;
+    max-width: 40px;
+    height: auto;
+}
+
+.Text-Description {
+    color: green;
+}
+
+.Text-DDT {
+    font-weight: bold;
+    color: #366b40;
+}
+
+.Operating-Hours {
+    text-align: left;
+    padding: 16px 0px 16px 0px;
+    color: #396d43;
+    font-weight: 500;
+    font-family: 'Hind', sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+
+.Operating-Hours-Text {
+    font-size: 1.2rem;
+}
+
+.Operating-Hours-Logo {
+    width: 50%;
+    min-width: 5px;
+    max-width: 30px;
+    height: auto;
+    padding: 0vw 0vw 0vw 2vw;
+}
+
+.Market-Operating-Section {
+    padding-top: 16px;
+}
+
+.Operating-Hour-Title {
+    text-align: left;
+    color: #969696;
+    font-family: 'Hind', sans-serif;
+    font-size: 0.9rem;
+}
+
+
+.Trading,
+.Order-Book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* to make these divs fill the full width of their parent */
+}
+
+.Section-Title {
+    color: #00ccff;
+    font-family: 'Hind', sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: left;
+    margin: 2.5vw 0vw 0vw 0vw;
+}
+
+.Trading-Hours-Section {
+    width: 100%
+}
+
+
+.Description-And-Hours {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Hind', sans-serif;
+    margin: 2vw 0vw 2vw 0vw;
+    width: 100%;
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: #d2d2d2;
+    margin: 20px 0;
+}
+
+.Ordering-Hours-Section {
+    width: 100%
+}
+
+
+
+
+@media (min-width: 375px) {
+    /* Most iphone users */
+
+    /* styles here */
+    .Notification-Image {
+        width: 20%;
+    }
+
+    .Notification-Text {
+        font-size: 0.6rem;
+    }
+}
+
+@media (min-width: 411px) {
+
+    /* iphone plus users */
+    /* styles here */
+    .Notification-Image {
+        width: 20%;
+    }
+
+    .Notification-Text {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media (min-width: 600px) {
+
+    /* large phones, potrait tablets */
+    /* styles here */
+    .Notification-Image {
+        width: 20%;
+    }
+
+    .Notification-Text {
+        font-size: 1rem;
+    }
+
+    .Operating-Hours-Text {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 768px) {
+
+    /* landscape tablets */
+    .Notification-Image {
+        width: 20%;
+    }
+
+    .Notification-Text {
+        font-size: 1.0rem;
+    }
+}
+
+@media (min-width: 992px) {
+
+    /* laptops/desktops */
+    /* styles here */
+
+    .Market-Container {
+        width: 80%;
+    }
+
+    .Trading,
+    .Order-Book {
+        align-items: flex-start;
+    }
+
+
+
+
+
+}
+
+@media (min-width: 1200px) {
+    /* large desktops */
+    /* styles here */
 }

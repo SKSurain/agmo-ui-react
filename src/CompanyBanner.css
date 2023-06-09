@@ -3,9 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1;
-    height: 100%;
 }
+
 
 .company-banner::before {
     content: '';

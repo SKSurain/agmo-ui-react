@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-header {
@@ -8,12 +11,17 @@
   flex-direction: row;
   align-items: stretch;
   justify-content: space-around;
-  flex-wrap: wrap;
-  height: 100vh;
+  flex-wrap: nowrap;
+  flex: 1;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .App-header {
     flex-direction: column;
   }
+}
+
+.CompanyBanner,
+.Market {
+  flex-basis: 50%;
 }
