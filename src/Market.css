@@ -1,9 +1,10 @@
 .Market {
     flex: 1 1 auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     box-sizing: border-box;
     overflow: auto;
+    padding: 4.5vw 2.5vw 0vw 4.5vw;
 }
 
 .Market-Container {
@@ -14,10 +15,12 @@
     flex-direction: column;
 }
 
+.Market-Notification p,
 .Market-Container p {
     margin: 0;
     padding: 0;
 }
+
 
 .Market-Notification {
     background-color: #ebfff4;
@@ -215,7 +218,6 @@
 @media (min-width: 768px) {
 
     /* landscape tablets */
-
     .Notification-Text {
         font-size: 1.0rem;
     }

@@ -6,16 +6,16 @@ import info from './Asset/icon_info.png'
 function Market() {
     return (
         <div className="Market">
-            <div className="Market-Container">
-                <div className="Market-Notification">
-                    <div className='Notification-Image'>
-                        <img src={info} className='Market-Notification-Logo' />
-                    </div>
-                    <div className='Notification-Text'>
-                        <p className='Text-Description'>Market to close on</p>
-                        <p className='Text-DDT'>Mon, 17 October 2022, 10:00 PM</p>
-                    </div>
+            <div className="Market-Notification">
+                <div className='Notification-Image'>
+                    <img src={info} className='Market-Notification-Logo' />
                 </div>
+                <div className='Notification-Text'>
+                    <p className='Text-Description'>Market to close on</p>
+                    <p className='Text-DDT'>Mon, 17 October 2022, 10:00 PM</p>
+                </div>
+            </div>
+            <div className="Market-Container">
                 <div className="Operating-Hours">
                     <div>
                         <p className='Operating-Hours-Text'>1d:4h:35m:3s</p>
