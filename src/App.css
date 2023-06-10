@@ -8,16 +8,16 @@
 .App-header {
   background-color: #FFFFFF;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: stretch;
   justify-content: space-around;
   flex-wrap: nowrap;
   flex: 1;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .App-header {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 

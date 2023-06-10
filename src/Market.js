@@ -36,7 +36,7 @@ function Market() {
                                 <p>Wednesday</p>
                                 <p>10:00 AM - 10:00 PM </p>
                             </div>
-                            <div className='Description-And-Hours'>
+                            <div className='Description-And-Hours last'>
                                 <p>Thursday</p>
                                 <p>10:00 AM - 10:00 PM </p>
                             </div>

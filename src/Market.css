@@ -25,9 +25,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    /* distributes child divs evenly along the horizontal axis */
     width: 100%;
-    /* to make this div fill the full width of its parent */
     padding: 5px 0px 5px 0px;
     margin: 0;
     border-radius: 5px;
@@ -37,7 +35,6 @@
 .Notification-Text {
     display: flex;
     flex-direction: column;
-    /* to divide the horizontal space equally between these two divs */
     padding: 0;
     margin: 0;
 }
@@ -53,7 +50,7 @@
     justify-content: center;
     width: 80%;
     font-family: 'Hind', sans-serif;
-    font-size: 0.5rem;
+    font-size: 0.65rem;
 }
 
 .Market-Notification-Logo {
@@ -83,7 +80,7 @@
 }
 
 .Operating-Hours-Text {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
 }
 
 .Operating-Hours-Logo {
@@ -95,14 +92,15 @@
 }
 
 .Market-Operating-Section {
-    padding-top: 16px;
+    padding-top: 0px;
 }
 
 .Operating-Hour-Title {
     text-align: left;
     color: #969696;
     font-family: 'Hind', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.6rem;
+    margin-bottom: 2vw !important;
 }
 
 
@@ -110,17 +108,16 @@
 .Order-Book {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     width: 100%;
-    /* to make these divs fill the full width of their parent */
 }
 
 .Section-Title {
     color: #00ccff;
     font-family: 'Hind', sans-serif;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 0.65rem;
     text-align: left;
     margin: 2.5vw 0vw 0vw 0vw;
 }
@@ -137,13 +134,18 @@
     font-family: 'Hind', sans-serif;
     margin: 2vw 0vw 2vw 0vw;
     width: 100%;
+    font-size: 0.65rem;
+}
+
+.last {
+    margin-bottom: 0;
 }
 
 .divider {
     height: 1px;
     width: 100%;
     background-color: #d2d2d2;
-    margin: 20px 0;
+    margin: 2.5vw 0vw 2.5vw 0vw;
 }
 
 .Ordering-Hours-Section {
@@ -156,53 +158,63 @@
 @media (min-width: 375px) {
     /* Most iphone users */
 
-    /* styles here */
     .Notification-Image {
         width: 20%;
     }
 
     .Notification-Text {
-        font-size: 0.6rem;
+        font-size: 0.9rem;
     }
+
+    .Description-And-Hours {
+        font-size: 0.75rem;
+    }
+
+    .Section-Title,
+    .Operating-Hour-Title {
+        font-size: 0.7rem;
+    }
+
+    .Operating-Hours-Text {
+        font-size: 1rem;
+    }
+
 }
 
 @media (min-width: 411px) {
 
     /* iphone plus users */
-    /* styles here */
-    .Notification-Image {
-        width: 20%;
-    }
 
-    .Notification-Text {
-        font-size: 0.8rem;
-    }
 }
 
 
 @media (min-width: 600px) {
 
     /* large phones, potrait tablets */
-    /* styles here */
-    .Notification-Image {
-        width: 20%;
+
+    .Operating-Hours-Text {
+        font-size: 1.1rem;
     }
 
     .Notification-Text {
         font-size: 1rem;
     }
 
-    .Operating-Hours-Text {
-        font-size: 1.2rem;
+    .Description-And-Hours {
+        font-size: 0.85rem;
     }
+
+    .Section-Title,
+    .Operating-Hour-Title {
+        font-size: 0.8rem;
+    }
+
+
 }
 
 @media (min-width: 768px) {
 
     /* landscape tablets */
-    .Notification-Image {
-        width: 20%;
-    }
 
     .Notification-Text {
         font-size: 1.0rem;
@@ -212,24 +224,31 @@
 @media (min-width: 992px) {
 
     /* laptops/desktops */
-    /* styles here */
 
     .Market-Container {
         width: 80%;
     }
 
-    .Trading,
-    .Order-Book {
-        align-items: flex-start;
+
+    .Operating-Hours-Text {
+        font-size: 1.2rem;
     }
 
+    .Notification-Text {
+        font-size: 1.1rem;
+    }
 
+    .Description-And-Hours {
+        font-size: 0.95rem;
+    }
 
-
+    .Section-Title,
+    .Operating-Hour-Title {
+        font-size: 0.9rem;
+    }
 
 }
 
 @media (min-width: 1200px) {
     /* large desktops */
-    /* styles here */
 }
