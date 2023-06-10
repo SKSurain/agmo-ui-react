@@ -226,6 +226,14 @@
         width: 80%;
     }
 
+    .Market-Notification {
+        width: 85%
+    }
+
+    .Description-And-Hours {
+        margin: 1.4vw 0vw 1.4vw 0vw;
+    }
+
 
     .Operating-Hours-Text {
         font-size: 1.2rem;
@@ -248,4 +256,30 @@
 
 @media (min-width: 1200px) {
     /* large desktops */
+
+    .Market-Container {
+        width: 75%;
+    }
+
+    .Market-Notification {
+        width: 80%
+    }
+
+
+    .Operating-Hours-Text {
+        font-size: 1.3rem;
+    }
+
+    .Notification-Text {
+        font-size: 1.2rem;
+    }
+
+    .Description-And-Hours {
+        font-size: 1.05rem;
+    }
+
+    .Section-Title,
+    .Operating-Hour-Title {
+        font-size: 1rem;
+    }
 }
