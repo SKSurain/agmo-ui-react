@@ -10,7 +10,6 @@
 .Market-Container {
     width: 90%;
     font-size: 1rem;
-    padding-top: 4.5vw;
     display: flex;
     flex-direction: column;
 }
