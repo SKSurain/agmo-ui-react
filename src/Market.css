@@ -214,7 +214,20 @@
 
     /* landscape tablets */
     .Notification-Text {
-        font-size: 1.0rem;
+        font-size: 0.9rem;
+    }
+
+    .Description-And-Hours {
+        font-size: 0.75rem;
+    }
+
+    .Section-Title,
+    .Operating-Hour-Title {
+        font-size: 0.7rem;
+    }
+
+    .Operating-Hours-Text {
+        font-size: 1rem;
     }
 }
 
